@@ -1,0 +1,20 @@
+{
+    "name": "guiol/slim-raintpl-skeleton",
+    "require": {
+        "slim/slim": "^4.10",
+        "slim/psr7": "^1.5",
+        "rain/raintpl": "^3.1",
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "g-rch",
+            "email": "guioliroc@gmail.com"
+        }
+    ]
+}
