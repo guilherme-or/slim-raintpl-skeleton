@@ -1,6 +1,6 @@
 <?php
 
-namespace app\layout;
+namespace app\helpers;
 
 use Rain\Tpl;
 
@@ -8,7 +8,7 @@ class Page extends Tpl
 {
 	private $tpl;
 
-	function __construct($view_folder = "../app/view/", $cache_folder = "../app/view/cache/", $debug = true)
+	function __construct($view_folder = "../app/core/views/", $cache_folder = "../app/core/views/cache/", $debug = true)
 	{
 		// configuração do Tpl
 		$config = [

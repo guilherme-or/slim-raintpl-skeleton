@@ -5,15 +5,15 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 require __DIR__ . '/../vendor/autoload.php';
-require '../app/config/config.php';
+require '../app/config.php';
 
-use app\layout\Page;
+use app\helpers\Page;
 
 $app = AppFactory::create();
 
-$app->get(BASE_PATH . '/', function (Request $request, Response $response, array $args) {
+$app->get(PATH . '/', function (Request $request, Response $response, array $args) {
     $page = new Page();
-    $includes = ['script' => 'index', 'style' => ''];
+    $includes = ['script' => 'index', 'stylesheet' => 'index'];
     $page->setTpl('index', $includes);
     return $response;
 });
